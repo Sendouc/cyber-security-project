@@ -12,6 +12,5 @@ export default async function handle(req, res) {
       author: { connect: { email: authorEmail } },
     },
   });
-  // await prisma.$executeRaw("")
   res.json(result);
 }
